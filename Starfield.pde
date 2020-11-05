@@ -3,7 +3,7 @@ int result = 0;
 int ranNum;
 void setup() {
   size(500, 500);
-  frameRate(60);
+  frameRate(30);
   for (int i = 0; i < bob.length; i++) {
     ranNum = (int)(Math.random()*51);
     if (ranNum == 0)
@@ -72,10 +72,10 @@ class oddballParticle extends Particle { //inhertance
 
   //Red sun
   oddballParticle() {
-    mySpeed = Math.random()*1;
+    mySpeed = Math.random()*1.5;
   }//
   void move() { //so the oddball moves differently
-    myX +=Math.cos(myAngle)*mySpeed;
+    myX += Math.cos(myAngle)*mySpeed;
     myY += Math.sin(myAngle)*mySpeed;
   }//
   void show() { //so the oddball shows differently
